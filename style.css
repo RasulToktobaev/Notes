@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial;
+}
+
+table{
+    font-size: xx-large;
+    width: 100%;
+    margin-top: 15%;
+    float: left;
+}
+
+tbody > tr {
+    width: 100%;
+}
+
+#main-info, #notes-count {
+    width: 100%;
+    float: left;
+    font-size: xx-large;
+    margin-top: 50%;
+    text-align: center;
+}
+
+#notes-count {
+    margin-top: 2.5%;
+    color: gray;
+    font-size: x-large;
+    font-weight: lighter;
+}
+
+.shadow-icon{
+    border-radius: 70%;
+    padding: 4.2%;
+    color: #ff3d12;
+    box-shadow: 0px 5px 10px rgba(135, 135, 135, 0.5);
+}
+
+#add-note-icon{
+    font-size: xx-large;
+    position: absolute;
+    top: 720px;
+    right: 40px;
+}
+
+.note-title{
+    font-size: x-large;
+    padding-left: 2.5%;
+    width: 90%;
+    padding-top: 6.5%;
+}
+
+.note-del-icon{
+    padding-top: 6.5%;
+    font-size: xx-large;
+    color: grey;
+}
+
+.note-date{
+    font-size: large;
+    padding-top: 2.5%;
+    float: left;
+    color: grey;
+}
