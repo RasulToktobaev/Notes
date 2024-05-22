@@ -8,6 +8,11 @@ body{
     font-family: Arial;
 }
 
+
+#main-screen{
+    display: none;
+}
+
 table{
     font-size: xx-large;
     width: 100%;
