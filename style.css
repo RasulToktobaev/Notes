@@ -9,9 +9,9 @@ body{
 }
 
 
-/* #main-screen{
+#main-screen{
     display: none;
-} */
+}
 
 table{
     font-size: xx-large;
@@ -111,4 +111,41 @@ textarea{
     outline: none;
     resize: none;
     height: 100%;
+}
+
+/* Install Screen */
+
+#install-screen img {
+    display: block;
+    width: 50%;
+    margin: auto;
+    margin-top: 45%;
+}
+
+#install-screen p {
+    font-size: x-large;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: blueviolet;
+}
+
+#install-screen div {
+    width: 100%;
+    text-align: center;
+}
+
+#install-screen i {
+    font-size: xx-large;
+    margin: auto;
+}
+
+@media all and (display-mode: fullscreen) {
+    #install-screen {
+        display: none;
+    }
+    #main-screen {
+        display: block;
+    }
 }
