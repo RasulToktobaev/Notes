@@ -1,33 +1,45 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="manifest" href="manifest.webmanifest">
-        <link rel="stylesheet" href="./style.css">
-        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <title>Notes</title>
-      </head>
-    <body>
-        <div id="main-screen">
-            <span id="main-info">Все заметки</span>
-            <span id="notes-count"></span>
-            <table>
-                <tbody></tbody>
-            </table>
-            <i id="add-note-icon" class="material-icons shadow-icon" onclick="addNoteIconClick()">+</i>
+
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Notes</title>
+</head>
+
+<body>
+
+    <div id="install-screen">
+        <img src="note.png" alt="note">
+        <p>Приложения для создания и редактирование заметок </p>
+        <div>
+            <i id="install-icon" class="material-icons shadow-icon">file_download</i>
         </div>
-    
-        <div id="edit-screen">
-                <i id="back-icon" class="material-icons" onclick="backIconClick()">arrow_back-ios</i>
-                <input type="text" placeholder="Название" onchange="saveNote()">
-                <hr>
-                <textarea onchange="saveNote()"></textarea>
-        </div>
+    </div>
 
-        <script src="https://momentjs.com/downloads/moment-with-locales.js"></script>
+    <div id="main-screen">
+        <span id="main-info">Все заметки</span>
+        <span id="notes-count"></span>
+        <table>
+            <tbody></tbody>
+        </table>
+        <i id="add-note-icon" class="material-icons shadow-icon" onclick="addNoteIconClick()">+</i>
+    </div>
 
-        <script src="./index.js">
+    <div id="edit-screen">
+        <i id="back-icon" class="material-icons" onclick="backIconClick()">arrow_back-ios</i>
+        <input type="text" placeholder="Название" onchange="saveNote()">
+        <hr>
+        <textarea onchange="saveNote()"></textarea>
+    </div>
 
-        </script>
-    </body>
+    <script src="https://momentjs.com/downloads/moment-with-locales.js"></script>
+
+    <script src="./index.js">
+
+    </script>
+</body>
+
 </html>
