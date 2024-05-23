@@ -84,6 +84,11 @@
 
  // Утилиты для обработчиков
  
+ const getTitleSlice = (title, strLength = 20) => {
+    if(title.length > strLength) 
+        return `${title.substr(0, strLength)}...`;
+    else return title;
+ }
  const createNewNote = () => {
    let date = moment(new Date());
    let object = {
