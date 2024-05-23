@@ -10,7 +10,7 @@
     <body>
         <div id="main-screen">
             <span id="main-info">Все заметки</span>
-            <span id="notes-count">Заметок 0</span>
+            <span id="notes-count"></span>
             <table>
                 <tbody>
                     <tr>
@@ -27,14 +27,14 @@
                     </tr>
                 </tbody>
             </table>
-            <i id="add-note-icon" class="material-icons shadow-icon">+</i>
+            <i id="add-note-icon" class="material-icons shadow-icon" onclick="addNoteIconClick()">+</i>
         </div>
     
         <div id="edit-screen">
                 <i id="back-icon" class="material-icons" onclick="backIconClick()">arrow_back-ios</i>
-                <input type="text" placeholder="Название">
+                <input type="text" placeholder="Название" onchange="saveNote()">
                 <hr>
-                <textarea></textarea>
+                <textarea onchange="saveNote()"></textarea>
         </div>
 
         <script src="https://momentjs.com/downloads/moment-with-locales.js"></script>

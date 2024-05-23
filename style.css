@@ -9,9 +9,9 @@ body{
 }
 
 
-#main-screen{
+/* #main-screen{
     display: none;
-}
+} */
 
 table{
     font-size: xx-large;
@@ -76,6 +76,7 @@ tbody > tr {
 /* Edit Screen */
 
 #edit-screen{
+    display: none;
     margin: 5%;
     margin-top: 10%;
     max-width: 100%;
