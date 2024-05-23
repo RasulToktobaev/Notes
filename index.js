@@ -89,6 +89,16 @@
         return `${title.substr(0, strLength)}...`;
     else return title;
  }
+
+ const updateNote = () => {
+    //Обновление заметки по noteId;
+    noteList.map(elem => {
+        if(elem.id === noteId) {
+            elem.title = getTitleSlice(input.value);
+            elem.text = textarea.value;
+        }
+    })
+ }
  const createNewNote = () => {
    let date = moment(new Date());
    let object = {
