@@ -132,3 +132,11 @@
  }
 
  // Установка
+ let defaultInstallEvent = null;
+ window.addEventListener('beforeinstallprompt', (event) => {
+   event.preventDefault();
+   defaultInstallEvent = event;
+ })
+ installIcon.addEventListener('click', (event) => {
+   defaultInstallEvent.prompt();
+ })
