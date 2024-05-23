@@ -91,7 +91,7 @@
  }
 
  const updateNote = () => {
-    //Обновление заметки по noteId;
+    // Обновление заметки по noteId;
     noteList.map(elem => {
         if(elem.id === noteId) {
             elem.title = getTitleSlice(input.value);
