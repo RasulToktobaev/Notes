@@ -137,6 +137,5 @@
    event.preventDefault();
    defaultInstallEvent = event;
  })
- installIcon.addEventListener('click', (event) => {
-   defaultInstallEvent.prompt();
+
  })
